@@ -1,0 +1,689 @@
+1666417359423:yaml::read_yaml("viz3.rawgraphs")
+1666417375150:rawdata <- yaml::read_yaml("viz3.rawgraphs")
+1666417385087:rawdata$rawData
+1666417484375:rawdata$rawData[1:10]
+1666417493643:rawdata$rawData[1:10]
+1666417512963:do.call(rbind, rawdata$rawData[1:10]
+1666417512966:)
+1666417518397:do.call(rbind, rawdata$rawData
+1666417518397:)
+1666417537331:mat <- do.call(rbind, rawdata$rawData)
+1666417538822:mat
+1666417548278:as.data.frame(mat)
+1666417552716:as.data.frame(mat) %>% View()
+1666417569794:as.data.frame(mat) |>  View()
+1666417632172:|>  View()
+1666417635016:as.data.frame(mat)
+1666417643811:df <- as.data.frame(mat)
+1666417677779:df[,1:4]
+1666417680284:df <- df[,1:4]
+1666417685177:df
+1666417699961:library(tidyverse)
+1666417703598:as_tibble(df)
+1666417716586:df <- as_tibble(df)
+1666417899125:library(plotly)
+1666418249209:library(tidyverse)
+1666418250797:library(plotly)
+1666418250929:rawdata <- yaml::read_yaml("viz3.rawgraphs")
+1666418250932:mat <- do.call(rbind, rawdata$rawData)
+1666418251440:df <- as.data.frame(mat)
+1666418251670:df <- df[,1:4]
+1666418254295:df <- as_tibble(df)
+1666418256444:df
+1666418322554:plot_ly(labels = df$v4, parents = df$V3
+1666418322555:)
+1666418331019:plot_ly(labels = df$v4, parents = df$V3, type = "sunburst"
+1666418331022:)
+1666418335125:plot_ly(labels = df$V4, parents = df$V3, type = "sunburst"
+1666418335128:)
+1666418340094:plot_ly(labels = df$V4, parents = df$V3, type = "sunburst")
+1666418346597:plot_ly(labels = df$V4, parents = df$V3, values = 1, type = "sunburst")
+1666418362634:df$V4
+1666418366970:df$V3
+1666418372095:plot_ly(labels = df$V4, parents = df$V1, values = 1, type = "sunburst")
+1666418389577:plot_ly(labels = df$V4, parents = df$V1, values = df$V4, type = "sunburst")
+1666418400320:plot_ly(
+1666418400323:labels = c("Eve", "Cain", "Seth", "Enos", "Noam", "Abel", "Awan", "Enoch", "Azura"),
+1666418400323:parents = c("", "Eve", "Eve", "Seth", "Seth", "Eve", "Eve", "Awan", "Eve"),
+1666418400324:values = c(10, 14, 12, 10, 2, 6, 6, 4, 4),
+1666418400324:type = 'sunburst'
+1666418400325:)
+1666418418967:plot_ly(
+1666418418969:labels = c("Eve", "Cain", "Seth", "Enos", "Noam", "Abel", "Awan", "Enoch", "Azura"),
+1666418418974:parents = c("", "Eve", "Eve", "Seth", "Seth", "Eve", "Eve", "Awan", "Eve"),
+1666418418978:values = c(10, 14, 12, 10, 2, 6, 6, 4, 4),
+1666418418982:type = 'sunburst'
+1666418418987:)
+1666418449471:as.integer(as.factor(df$V4))
+1666418454107:plot_ly(labels = df$V4, parents = df$V1, values = as.integer(as.factor(df$V4)), type = "sunburst")
+1666418461085:df$V1
+1666418470438:df$V4
+1666418493936:plot_ly(
+1666418493938:labels = df$V1,
+1666418493943:parents = df$V4,
+1666418493947:values = as.integer(as.factor(df$V4)),
+1666418493952:type = 'sunburst'
+1666418493956:)
+1666418503909:plot_ly(
+1666418503912:labels = df$V1[1:10],
+1666418503916:parents = df$V4[1:10],
+1666418503921:values = as.integer(as.factor(df$V4))[1:10],
+1666418503925:type = 'sunburst'
+1666418503930:)
+1666418508238:plot_ly(
+1666418508240:labels = df$V1[1:10],
+1666418508245:parents = df$V4[1:10],
+1666418508249:values = as.integer(as.factor(df$V4))[1:10],
+1666418508254:type = 'sunburst'
+1666418508258:)
+1666418509618:plot_ly(labels = df$V4, parents = df$V1, values = as.integer(as.factor(df$V4)), type = "sunburst")
+1666418781619:library(tidyverse)
+1666418783155:library(plotly)
+1666418783287:rawdata <- yaml::read_yaml("viz3.rawgraphs")
+1666418787119:df <- as.data.frame(mat)
+1666418787245:df <- df[,1:4]
+1666418787411:df <- as_tibble(df)
+1666418795543:rawdata <- yaml::read_yaml("viz3.rawgraphs")
+1666418799533:mat <- do.call(rbind, rawdata$rawData)
+1666418801922:df <- as.data.frame(mat)
+1666418803359:df <- df[,1:4]
+1666418805000:df <- as_tibble(df)
+1666418806693:plot_ly(
+1666418806695:labels = df$V1[1:10],
+1666418806699:parents = df$V4[1:10],
+1666418806704:values = as.integer(as.factor(df$V4))[1:10],
+1666418806708:type = 'sunburst'
+1666418806713:)
+1666418813455:df$V1[1:10]
+1666418822604:plot_ly(
+1666418822605:labels = df$V4[1:10],
+1666418822605:parents = df$V1[1:10],
+1666418822606:values = as.integer(as.factor(df$V4))[1:10],
+1666418822606:type = 'sunburst'
+1666418822607:)
+1666418839237:plot_ly(
+1666418839239:labels = df$V4[1:100],
+1666418839244:parents = df$V1[1:100],
+1666418839248:values = as.integer(as.factor(df$V4))[1:10],
+1666418839253:type = 'sunburst'
+1666418839257:)
+1666418848987:plot_ly(
+1666418848988:labels = df$V4[1:100],
+1666418848988:parents = df$V1[1:100],
+1666418848989:values = as.integer(as.factor(df$V4))[1:100],
+1666418848989:type = 'sunburst'
+1666418848989:)
+1666418859275:plot_ly(
+1666418859276:labels = df$V4[1:20],
+1666418859277:parents = df$V1[1:20],
+1666418859278:values = as.integer(as.factor(df$V4))[1:20],
+1666418859278:type = 'sunburst'
+1666418859279:)
+1666418864024:plot_ly(
+1666418864026:labels = df$V4[1:10],
+1666418864031:parents = df$V1[1:10],
+1666418864035:values = as.integer(as.factor(df$V4))[1:10],
+1666418864039:type = 'sunburst'
+1666418864044:)
+1666418873102:n <- 10
+1666418879150:plot_ly(
+1666418879152:labels = df$V4[1:n],
+1666418879157:parents = df$V1[1:n],
+1666418879161:values = as.integer(as.factor(df$V4))[1:n],
+1666418879166:type = 'sunburst'
+1666418879170:)
+1666465176644:rawdata <- yaml::read_yaml("viz3.rawgraphs")
+1666465176790:mat <- do.call(rbind, rawdata$rawData)
+1666465176937:df <- as.data.frame(mat)
+1666465177052:df <- df[,1:4]
+1666465177505:df <- as_tibble(df)
+1666465177983:n <- 10
+1666465180760:library(tidyverse)
+1666465182374:library(plotly)
+1666465182500:rawdata <- yaml::read_yaml("viz3.rawgraphs")
+1666465182502:mat <- do.call(rbind, rawdata$rawData)
+1666465182502:df <- as.data.frame(mat)
+1666465182503:df <- df[,1:4]
+1666465182503:df <- as_tibble(df)
+1666465182505:n <- 10
+1666465182583:plot_ly(
+1666465182584:labels = df$V4[1:n],
+1666465182584:parents = df$V1[1:n],
+1666465182584:values = as.integer(as.factor(df$V4))[1:n],
+1666465182585:type = 'sunburst'
+1666465182586:)
+1666465187214:n <- 15
+1666465187333:plot_ly(
+1666465187335:labels = df$V4[1:n],
+1666465187339:parents = df$V1[1:n],
+1666465187344:values = as.integer(as.factor(df$V4))[1:n],
+1666465187348:type = 'sunburst'
+1666465187353:)
+1666465191193:n <- 12
+1666465191852:plot_ly(
+1666465191855:labels = df$V4[1:n],
+1666465191859:parents = df$V1[1:n],
+1666465191864:values = as.integer(as.factor(df$V4))[1:n],
+1666465191868:type = 'sunburst'
+1666465191873:)
+1666465196218:n <- 11
+1666465196882:plot_ly(
+1666465196885:labels = df$V4[1:n],
+1666465196889:parents = df$V1[1:n],
+1666465196894:values = as.integer(as.factor(df$V4))[1:n],
+1666465196898:type = 'sunburst'
+1666465196903:)
+1666465205868:df$V4[1:n]
+1666465233413:df[1:n, c("V1", "V4")]
+1666465253050:n <- 12
+1666465261254:df[1:n, c("V1", "V4")]
+1666465268004:n <- 12
+1666465268214:plot_ly(
+1666465268216:labels = df$V4[1:n],
+1666465268221:parents = df$V1[1:n],
+1666465268225:values = as.integer(as.factor(df$V4))[1:n],
+1666465268230:type = 'sunburst'
+1666465268234:)
+1666465270609:df[1:n, c("V1", "V4")]
+1666465290461:plot_ly(
+1666465290461:labels = df$V1[1:n],
+1666465290462:parents = df$V4[1:n],
+1666465290462:values = as.integer(as.factor(df$V4))[1:n],
+1666465290462:type = 'sunburst'
+1666465290463:)
+1666465294954:n <- 11
+1666465295128:plot_ly(
+1666465295131:labels = df$V1[1:n],
+1666465295135:parents = df$V4[1:n],
+1666465295140:values = as.integer(as.factor(df$V4))[1:n],
+1666465295144:type = 'sunburst'
+1666465295149:)
+1666465297930:plot_ly(
+1666465297932:labels = df$V1[1:n],
+1666465297936:parents = df$V4[1:n],
+1666465297941:values = as.integer(as.factor(df$V4))[1:n],
+1666465297945:type = 'sunburst'
+1666465297950:)
+1666465298226:df[1:n, c("V1", "V4")]
+1666465305645:plot_ly(
+1666465305647:labels = df$V4[1:n],
+1666465305652:parents = df$V1[1:n],
+1666465305656:values = as.integer(as.factor(df$V4))[1:n],
+1666465305661:type = 'sunburst'
+1666465305665:)
+1666465306326:df[1:n, c("V1", "V4")]
+1666465402710:df = read.csv('https://raw.githubusercontent.com/plotly/datasets/718417069ead87650b90472464c7565dc8c2cb1c/coffee-flavors.csv')
+1666465405101:df
+1666465419342:fig <- fig %>% add_trace(
+1666465419349:type='sunburst',
+1666465419358:ids=df$ids,
+1666465419367:labels=df$labels,
+1666465419376:parents=df$parents,
+1666465419385:domain=list(column=1),
+1666465419394:maxdepth=2,
+1666465419403:insidetextorientation='radial'
+1666465419412:)
+1666465423132:fig <- plot_ly()
+1666465423745:fig <- fig %>% add_trace(
+1666465423752:type='sunburst',
+1666465423761:ids=df$ids,
+1666465423770:labels=df$labels,
+1666465423779:parents=df$parents,
+1666465423788:domain=list(column=1),
+1666465423797:maxdepth=2,
+1666465423806:insidetextorientation='radial'
+1666465423815:)
+1666465425210:fig
+1666465435454:df
+1666465457559:View(df)
+1666467557962:df$V4
+1666467564750:library(tidyverse)
+1666467564897:library(plotly)
+1666467565052:rawdata <- yaml::read_yaml("viz3.rawgraphs")
+1666467565199:mat <- do.call(rbind, rawdata$rawData)
+1666467565353:df <- as.data.frame(mat)
+1666467565695:df <- df[,1:4]
+1666467566575:df <- as_tibble(df)
+1666467569061:df
+1666467598269:plot_ly(
+1666467598269:labels = c("Grundlegende Geodienste"),
+1666467598270:parents = c(""),
+1666467598271:values = as.integer(as.factor(df$V4))[1:n],
+1666467598272:type = 'sunburst'
+1666467598273:)
+1666467604111:df
+1666467617182:plot_ly(
+1666467617185:labels = c("Grundlegende Geodienste", "geo.admin.ch"),
+1666467617187:parents = c("", "Grundlegende Geodienste"),
+1666467617190:values = as.integer(as.factor(df$V4))[1:n],
+1666467617192:type = 'sunburst'
+1666467617195:)
+1666467622065:plot_ly(
+1666467622067:labels = c("Grundlegende Geodienste", "geo.admin.ch"),
+1666467622070:parents = c("", "Grundlegende Geodienste"),
+1666467622072:type = 'sunburst'
+1666467622075:)
+1666467626919:df
+1666467644216:plot_ly(
+1666467644217:labels = c("Grundlegende Geodienste", "geo.admin.ch", "geodienste.ch"),
+1666467644219:parents = c("", "Grundlegende Geodienste", "Grundlegende Geodienste"),
+1666467644222:type = 'sunburst'
+1666467644225:)
+1666467669235:plot_ly(
+1666467669236:labels = c("Grundlegende Geodienste", "geo.admin.ch", "geodienste.ch", "raumdatenpool.ch"),
+1666467669238:parents = c("", "Grundlegende Geodienste", "Grundlegende Geodienste", "Grundlegende Geodienste"),
+1666467669241:type = 'sunburst'
+1666467669245:)
+1666467678512:df
+1666467689881:unique(df$V1)
+1666467732251:plot_ly(
+1666467732251:labels = unique(df$V1)
+1666467732252:parents = rep("", length(unique(df$V1)))
+1666467735499:plot_ly(
+1666467735501:labels = unique(df$V1),
+1666467735504:parents = rep("", length(unique(df$V1)))
+1666467735505:)
+1666467743948:plot_ly(
+1666467743949:labels = unique(df$V1),
+1666467743952:parents = rep("", length(unique(df$V1))),
+1666467743954:type = "sunburst"
+1666467743957:)
+1666467757027:df
+1666467812374:level1 <- unique(df$V1)
+1666467824290:rep("", length(level1))
+1666467834170:level1_parents <- rep("", length(level1))
+1666467849431:level2 <- unique(df$V2)
+1666467852513:level2
+1666467861755:df$V2
+1666467875211:level2_parents <- df$V1
+1666467892232:lables = c(level1, level2)
+1666467901427:parents = c(level1_parents, level2_parents)
+1666467917695:plot_ly(
+1666467917696:labels = labels,
+1666467917697:parents = parents,
+1666467917698:type = "sunburst"
+1666467917699:)
+1666467921314:labels
+1666467925064:plot_ly(
+1666467925066:labels = lables,
+1666467925069:parents = parents,
+1666467925072:type = "sunburst"
+1666467925074:)
+1666467931723:plot_ly(
+1666467931726:labels = lables,
+1666467931728:parents = parents,
+1666467931731:type = "sunburst"
+1666467931734:)
+1666467940309:level1_parents
+1666467942432:level2_parents
+1666467950080:level1
+1666467952972:level1_parents
+1666467959725:df$V2
+1666467965349:length(level2)
+1666467969859:length(level2_parents)
+1666467989847:length(df$V2)
+1666467994175:length(df$V1)
+1666467998340:level2 <- df$V2
+1666467998456:level2_parents <- df$V1
+1666467998592:lables = c(level1, level2)
+1666467999071:parents = c(level1_parents, level2_parents)
+1666467999977:plot_ly(
+1666467999978:labels = lables,
+1666467999981:parents = parents,
+1666467999983:type = "sunburst"
+1666467999986:)
+1666468021041:df
+1666468076034:View(df)
+1666468199407:level1 <- unique(df$V1)
+1666468199544:level1_parents <- rep("", length(level1))
+1666468199688:level2 <- df$V4
+1666468199869:level2_parents <- df$V3
+1666468200150:level3 <- df$V3
+1666468200486:level3_parents <- df$V2
+1666468200988:lables = c(level1, level2)
+1666468201125:parents = c(level1_parents, level2_parents)
+1666468201514:plot_ly(
+1666468201515:labels = lables,
+1666468201518:parents = parents,
+1666468201521:type = "sunburst"
+1666468201524:)
+1666468212636:lables
+1666468215692:parents
+1666468223536:level1 <- unique(df$V1)
+1666468223681:level1_parents <- rep("", length(level1))
+1666468223827:level2 <- df$V4
+1666468224196:level2_parents <- df$V3
+1666468224322:level3 <- df$V3
+1666468224458:level3_parents <- df$V2
+1666468224771:lables = c(level1, level2)
+1666468225006:parents = c(level1_parents, level2_parents)
+1666468225593:plot_ly(
+1666468225595:labels = lables,
+1666468225598:parents = parents,
+1666468225601:type = "sunburst"
+1666468225603:)
+1666468245939:level1 <- unique(df$V1)
+1666468246085:level1_parents <- rep("", length(level1))
+1666468246218:level2 <- df$V2
+1666468246550:level2_parents <- df$V1
+1666468246740:lables = c(level1, level2)
+1666468247148:parents = c(level1_parents, level2_parents)
+1666468247419:plot_ly(
+1666468247420:labels = lables,
+1666468247420:parents = parents,
+1666468247421:type = "sunburst"
+1666468247422:)
+1666468266632:View(df)
+1666468623286:library(tidyverse)
+1666468624941:library(plotly)
+1666468625068:rawdata <- yaml::read_yaml("viz3.rawgraphs")
+1666468625070:mat <- do.call(rbind, rawdata$rawData)
+1666468625070:df <- as.data.frame(mat)
+1666468625071:df <- df[,1:4]
+1666468625071:df <- as_tibble(df)
+1666468625073:unique(df$V1)
+1666468628183:n <- 12
+1666468635395:level1 <- unique(df$V1)
+1666468635530:level1_parents <- rep("", length(level1))
+1666468636030:level2 <- df$V2
+1666468636220:level2_parents <- df$V1
+1666468636867:lables = c(level1, level2)
+1666468637006:parents = c(level1_parents, level2_parents)
+1666468637497:plot_ly(
+1666468637499:labels = lables,
+1666468637499:parents = parents,
+1666468637500:type = "sunburst"
+1666468637501:)
+1666468716842:View(df)
+1666468823657:level3 <- df$V4
+1666468823829:level3_parents <- df$V2
+1666468834162:lables = c(level1, level2, level3)
+1666468834315:parents = c(level1_parents, level2_parents, level3_parents)
+1666468834892:plot_ly(
+1666468834895:labels = lables,
+1666468834899:parents = parents,
+1666468834904:type = "sunburst"
+1666468834905:)
+1666468887336:level1_ids <- level1
+1666468919657:paste(level2, level2_parents, sep = "-")
+1666468921966:level2_ids <- paste(level2, level2_parents, sep = "-")
+1666468952974:level1_ids <- paste(level1, level1_parents, sep = "-")
+1666468954642:level1_ids
+1666468959048:level2_ids <- paste(level2, level2_parents, sep = "-")
+1666468959759:level3 <- df$V4
+1666468959900:level3_parents <- df$V2
+1666468960298:level3_ids <- paste(level3, level3_parents, sep = "-")
+1666468962879:lables = c(level1, level2, level3)
+1666468963029:parents = c(level1_parents, level2_parents, level3_parents)
+1666468977330:ids <- c(level1_ids, level2_ids, level3_ids)
+1666468985262:plot_ly(
+1666468985265:labels = lables,
+1666468985269:parents = parents,
+1666468985274:ids = ids,
+1666468985278:type = "sunburst"
+1666468985282:)
+1666469005488:ids
+1666469009572:unique(ids)
+1666469014497:duplicated(ids)
+1666469032930:lables = c(level1, level2)
+1666469033069:parents = c(level1_parents, level2_parents)
+1666469033204:ids <- c(level1_ids, level2_ids)
+1666469033586:plot_ly(
+1666469033588:labels = lables,
+1666469033593:parents = parents,
+1666469033597:ids = ids,
+1666469033602:type = "sunburst"
+1666469033606:)
+1666469039520:plot_ly(
+1666469039523:labels = lables,
+1666469039527:parents = parents,
+1666469039532:type = "sunburst"
+1666469039536:)
+1666469050438:duplicated(ids)
+1666469061806:which(duplicated(ids))
+1666469070301:ids[duplicated(ids)]
+1666469094508:level3
+1666469098849:ids <- c(level1_ids, level2_ids)
+1666469106268:duplicated(ids)
+1666469129191:duplicated(ids)
+1666469141920:duplicated(ids) | duplicated(ids, fromLast = TRUE)
+1666469145885:ids[duplicated(ids) | duplicated(ids, fromLast = TRUE)]
+1666469169473:lables
+1666469188268:df2 <- data.frame(
+1666469188271:lables = c(level1, level2)
+1666469188275:parents = c(level1_parents, level2_parents)
+1666469195215:df2 <- data.frame(
+1666469195216:lables = c(level1, level2),
+1666469195217:parents = c(level1_parents, level2_parents),
+1666469195218:ids = c(level1_ids, level2_ids)
+1666469195219:)
+1666469197845:View(df2)
+1666469273162:df$V2
+1666469301825:rawdata
+1666469511462:rawdata <- yaml::read_yaml("viz3.rawgraphs")
+1666469511721:mat <- do.call(rbind, rawdata$rawData)
+1666469513149:df <- as.data.frame(mat)
+1666469514745:View(df)
+1666469590964:c("Kategorie", "Initiative",	"Betreiber",	"Steuerung	Nutzer(uniquevisits/monat)",	"Aufwand(FTE/year)",	"Beschreibung",	"color")
+1666469598904:colnames(df) <- c("Kategorie", "Initiative",	"Betreiber",	"Steuerung	Nutzer(uniquevisits/monat)",	"Aufwand(FTE/year)",	"Beschreibung",	"color")
+1666469601159:View(df)
+1666469618127:rawdata <- yaml::read_yaml("viz3.rawgraphs")
+1666469618273:mat <- do.call(rbind, rawdata$rawData)
+1666469618726:df <- as.data.frame(mat)
+1666469620531:df
+1666469623507:colnames(df)
+1666469633062:c("Kategorie", "Initiative",	"Betreiber",	"Steuerung	Nutzer(uniquevisits/monat)",	"Aufwand(FTE/year)",	"Beschreibung",	"color")
+1666469642699:colnames(df) <- c("Kategorie", "Initiative",	"Betreiber",	"Steuerung", "Nutzer(uniquevisits/monat)",	"Aufwand(FTE/year)",	"Beschreibung",	"color")
+1666469645453:View(df)
+1666469660896:colnames(df) <- c("Kategorie", "Initiative",	"Betreiber",	"Steuerung", "Nutzer",	"Aufwand",	"Beschreibung",	"color")
+1666469796739:df |>
+1666469796741:select(Kategorie, Initiative, Betreiber)
+1666469804829:df |>
+1666469804832:select(Kategorie, Initiative, Betreiber) |>
+1666469804836:distinct()
+1666469827261:?distinct
+1666469869806:df <- df |>
+1666469869808:select(Kategorie, Initiative, Betreiber) |>
+1666469869813:distinct()
+1666469884384:df
+1666469899367:level1 <- unique(df$Kategorie)
+1666469899600:level1_parents <- rep("", length(level1))
+1666469900421:level1_ids <- paste(level1, level1_parents, sep = "-")
+1666469908919:level2 <- df$Initiative
+1666469912174:level2_parents <- df$Kategorie
+1666469913515:level2_ids <- paste(level2, level2_parents, sep = "-")
+1666469919330:level3 <- df$Betreiber
+1666469925511:level3_parents <- df$Initiative
+1666469928846:level3_ids <- paste(level3, level3_parents, sep = "-")
+1666469935855:any(duplicated(level3_ids))
+1666469951406:level3_ids
+1666469976559:df2 <- data.frame(
+1666469976562:lables = c(level1, level2),
+1666469976566:parents = c(level1_parents, level2_parents),
+1666469976571:ids = c(level1_ids, level2_ids)
+1666469976576:)
+1666469979506:df2
+1666469986117:distinct(df2)
+1666470015913:df2
+1666470026402:plot_ly(df2,
+1666470026402:labels = ~lables,
+1666470026403:parents = ~parents,
+1666470026403:ids = ~ids
+1666470026403:type = "sunburst"
+1666470029766:plot_ly(df2,
+1666470029769:labels = ~lables,
+1666470029774:parents = ~parents,
+1666470029778:ids = ~ids,
+1666470029783:type = "sunburst"
+1666470029788:)
+1666470035224:plot_ly(df2,
+1666470035226:labels = ~lables,
+1666470035231:parents = ~parents,
+1666470035236:type = "sunburst"
+1666470035240:)
+1666470076447:df2 <- data.frame(
+1666470076447:lables = c(level1, level2),
+1666470076448:parents = c(level1_parents, level2_parents),
+1666470076448:ids = c(level1_ids, level2_ids)
+1666470076448:) |>
+1666470076449:distinct(labels, parents)
+1666470084840:df2 <- data.frame(
+1666470084841:lables = c(level1, level2),
+1666470084841:parents = c(level1_parents, level2_parents),
+1666470084841:ids = c(level1_ids, level2_ids)
+1666470084842:) |>
+1666470084842:distinct(lables, parents)
+1666470089867:plot_ly(df2,
+1666470089870:labels = ~lables,
+1666470089874:parents = ~parents,
+1666470089879:type = "sunburst"
+1666470089884:)
+1666470109800:View(df2)
+1666470159076:df2 <- data.frame(
+1666470159079:lables = c(level1, level2),
+1666470159083:parents = c(level1_parents, level2_parents),
+1666470159088:ids = c(level1_ids, level2_ids)
+1666470159093:) |>
+1666470159097:distinct(lables, parents)
+1666470159750:plot_ly(df2,
+1666470159753:labels = ~lables,
+1666470159758:parents = ~parents,
+1666470159762:type = "sunburst"
+1666470159767:)
+1666470241762:plot_ly(df2,
+1666470241762:labels = ~lables,
+1666470241762:parents = ~parents,
+1666470241763:type = "sunburst"
+1666470241763:)
+1666470251122:df2 |>
+1666470251124:plot_ly(
+1666470251129:labels = ~lables,
+1666470251133:parents = ~parents,
+1666470251138:type = "sunburst"
+1666470251143:)
+1666470265360:View(df2)
+1666470292154:df$Kategorie == "Grundlegende Geodatendienste"
+1666470296041:df$Kategorie
+1666470300991:df$Kategorie == "Grundlegende Geodienste"
+1666470309754:df$Kategorie[df$Kategorie == "Grundlegende Geodienste"]
+1666470319288:df$Initiative[df$Kategorie == "Grundlegende Geodienste"]
+1666470327261:df$Initiative[df$Kategorie == "Grundlegende Geodienste"] |> duplicated()
+1666470363748:df2$lables[df2$parents == "Grundlegende Geodienste"] |> duplicated()
+1666470398633:df2$lables[df2$parents == "Grundlegende Geodienste"]
+1666470417411:df2
+1666470432581:df2 |>
+1666470432584:mutate(id = paste(label, parents, sep = "-"))
+1666470441265:df2 |>
+1666470441268:mutate(id = paste(lable, parents, sep = "-"))
+1666470444744:df2
+1666470451698:df2 |>
+1666470451701:mutate(id = paste(lables, parents, sep = "-"))
+1666470464967:df2 |>
+1666470464969:mutate(id = paste(lables, parents, sep = "-")) |> filter(duplicated(id))
+1666470476888:df2 |>
+1666470476890:mutate(id = paste(lables, parents, sep = "-")) |>
+1666470476895:plot_ly(
+1666470476899:labels = ~lables,
+1666470476904:parents = ~parents,
+1666470476908:type = "sunburst"
+1666470476913:)
+1666470485600:df2 |>
+1666470485603:mutate(id = paste(lables, parents, sep = "-")) |>
+1666470485607:plot_ly(
+1666470485612:labels = ~lables,
+1666470485616:parents = ~parents,,
+1666470485621:ids = ~ids,
+1666470485625:type = "sunburst"
+1666470485630:)
+1666470489935:df2 |>
+1666470489937:mutate(id = paste(lables, parents, sep = "-")) |>
+1666470489938:plot_ly(
+1666470489939:labels = ~lables,
+1666470489940:parents = ~parents,
+1666470489940:ids = ~ids,
+1666470489940:type = "sunburst"
+1666470489941:)
+1666470514482:df2 |>
+1666470514484:mutate(ids = paste(lables, parents, sep = "-")) |>
+1666470514489:plot_ly(
+1666470514493:labels = ~lables,
+1666470514498:parents = ~parents,
+1666470514502:ids = ~ids,
+1666470514506:type = "sunburst"
+1666470514511:)
+1666470577518:df2 |>
+1666470577521:mutate(ids = row_number()) |>
+1666470577525:plot_ly(
+1666470577529:labels = ~lables,
+1666470577534:parents = ~parents,
+1666470577538:ids = ~ids,
+1666470577543:type = "sunburst"
+1666470577547:)
+1666470616786:library(plotly)
+1666470616797:d <- data.frame(
+1666470616806:ids = c(
+1666470616815:"North America", "Europe", "Australia", "North America - Football", "Soccer",
+1666470616823:"North America - Rugby", "Europe - Football", "Rugby",
+1666470616832:"Europe - American Football","Australia - Football", "Association",
+1666470616841:"Australian Rules", "Autstralia - American Football", "Australia - Rugby",
+1666470616850:"Rugby League", "Rugby Union"
+1666470616859:),
+1666470616867:labels = c(
+1666470616876:"North<br>America", "Europe", "Australia", "Football", "Soccer", "Rugby",
+1666470616885:"Football", "Rugby", "American<br>Football", "Football", "Association",
+1666470616894:"Australian<br>Rules", "American<br>Football", "Rugby", "Rugby<br>League",
+1666470616903:"Rugby<br>Union"
+1666470616912:),
+1666470616921:parents = c(
+1666470616930:"", "", "", "North America", "North America", "North America", "Europe",
+1666470616939:"Europe", "Europe","Australia", "Australia - Football", "Australia - Football",
+1666470616948:"Australia - Football", "Australia - Football", "Australia - Rugby",
+1666470616956:"Australia - Rugby"
+1666470616965:),
+1666470616974:stringsAsFactors = FALSE
+1666470616983:)
+1666470616997:fig <- plot_ly(d, ids = ~ids, labels = ~labels, parents = ~parents, type = 'sunburst')
+1666470617010:fig
+1666470624035:d
+1666470647401:View(d)
+1666470921734:df2 |>
+1666470921736:mutate(ids = paste(lables, parents, sep = "-")) |>
+1666470921741:plot_ly(
+1666470921745:labels = ~lables
+1666470921749:parents = ~parents,
+1666470924600:df2 |>
+1666470924601:mutate(ids = paste(lables, parents, sep = "-")) |>
+1666470924601:plot_ly(
+1666470924601:labels = ~lables,
+1666470924602:parents = ~parents,
+1666470924602:ids = ~ids,
+1666470924603:type = "sunburst"
+1666470924603:)
+1666470928493:df2 |>
+1666470928496:mutate(ids = paste(lables, parents, sep = "-")) |>
+1666470928500:plot_ly(
+1666470928505:labels = ~lables,
+1666470928509:parents = ~parents,
+1666470928514:type = "sunburst"
+1666470928518:)
+1666471296006:library(tidyverse)
+1666471296171:library(plotly)
+1666471296298:rawdata <- yaml::read_yaml("viz3.rawgraphs")
+1666471296428:mat <- do.call(rbind, rawdata$rawData)
+1666471296692:df <- as.data.frame(mat)
+1666471297105:colnames(df) <- c("Kategorie", "Initiative",	"Betreiber",	"Steuerung", "Nutzer",	"Aufwand",	"Beschreibung",	"color")
+1666471297942:df <- df |>
+1666471297943:select(Kategorie, Initiative, Betreiber) |>
+1666471297944:distinct()
+1666471314088:write_csv(df, "data.csv")
+1666471673404:View(df)
+1666471704585:rawdata <- yaml::read_yaml("viz3.rawgraphs")
+1666471704758:mat <- do.call(rbind, rawdata$rawData)
+1666471704903:df <- as.data.frame(mat)
+1666471705321:colnames(df) <- c("Kategorie", "Initiative",	"Betreiber",	"Steuerung", "Nutzer",	"Aufwand",	"Beschreibung",	"color")
+1666471707993:View(df)
+1666471782218:rawdata <- yaml::read_yaml("viz3.rawgraphs")
+1666471782432:mat <- do.call(rbind, rawdata$rawData)
+1666471782536:df <- as.data.frame(mat)
+1666471782738:colnames(df) <- c("Kategorie", "Initiative",	"Betreiber",	"Steuerung", "Nutzer",	"Aufwand",	"Beschreibung",	"color")
+1666471783138:write_csv(df, "data.csv")

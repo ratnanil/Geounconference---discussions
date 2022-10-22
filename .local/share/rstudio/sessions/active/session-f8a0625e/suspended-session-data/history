@@ -1,0 +1,55 @@
+library(tidyverse)
+library(plotly)
+rawdata <- yaml::read_yaml("viz3.rawgraphs")
+df <- as.data.frame(mat)
+df <- df[,1:4]
+df <- as_tibble(df)
+rawdata <- yaml::read_yaml("viz3.rawgraphs")
+mat <- do.call(rbind, rawdata$rawData)
+df <- as.data.frame(mat)
+df <- df[,1:4]
+df <- as_tibble(df)
+plot_ly(
+labels = df$V1[1:10],
+parents = df$V4[1:10],
+values = as.integer(as.factor(df$V4))[1:10],
+type = 'sunburst'
+)
+df$V1[1:10]
+plot_ly(
+labels = df$V4[1:10],
+parents = df$V1[1:10],
+values = as.integer(as.factor(df$V4))[1:10],
+type = 'sunburst'
+)
+plot_ly(
+labels = df$V4[1:100],
+parents = df$V1[1:100],
+values = as.integer(as.factor(df$V4))[1:10],
+type = 'sunburst'
+)
+plot_ly(
+labels = df$V4[1:100],
+parents = df$V1[1:100],
+values = as.integer(as.factor(df$V4))[1:100],
+type = 'sunburst'
+)
+plot_ly(
+labels = df$V4[1:20],
+parents = df$V1[1:20],
+values = as.integer(as.factor(df$V4))[1:20],
+type = 'sunburst'
+)
+plot_ly(
+labels = df$V4[1:10],
+parents = df$V1[1:10],
+values = as.integer(as.factor(df$V4))[1:10],
+type = 'sunburst'
+)
+n <- 10
+plot_ly(
+labels = df$V4[1:n],
+parents = df$V1[1:n],
+values = as.integer(as.factor(df$V4))[1:n],
+type = 'sunburst'
+)
